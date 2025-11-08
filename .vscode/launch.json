@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Gemini Few-Shot Detection",
+      "type": "python",
+      "request": "launch",
+      "module": "multimodal_rs_change_detection.gemini_few_shot",
+      "args": [
+        "${env:LEVIR_CC_DATASET}",
+        "--num-samples",
+        "15",
+        "--output-dir",
+        "${workspaceFolder}/results/few_shot_gemini",
+        "--output-name",
+        "gemini-fewshots-result1.json"
+      ],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    }
+  ]
+}
